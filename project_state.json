@@ -1,16 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 15,
   "summary": "Build a meme coin website inspired by theuselesscoin.com, rebranded as 'The Pointless Coin'. The site should replicate the look and feel of the original but use custom branding and a user-provided coin image.",
   "architectural_notes": [
     "Single-page meme coin website, static or near-static with fun/animated UI elements",
-    "Branding: 'The Pointless Coin' replacing all references to 'The Useless Coin'"
+    "Branding: 'The Pointless Coin' replacing all references to 'The Useless Coin'",
+    "Coin is on the Solana chain — all chain/wallet references should use SOL, Phantom wallet, and Solana DEXes (e.g. Jupiter, Raydium)"
   ],
-  "known_issues": [
-    "User has not yet provided the coin photo — placeholder needed until image is supplied"
-  ],
+  "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- A shiny gold coin with a bold letter 'P' embossed in the center, cartoon-style with a gleaming metallic finish and a slight comic glow effect around the edge, circular format (pointless-coin.dim_512x512.png)",
   "existing_features": [
     {
       "id": "feature-create-a-full-page-hero-section-with-a-large-animated-coin-logo-using-the-generated-coin-image-the-headline-the-pointless-coin-a-punchy-meme-style-tagline-e-g-absolutely-no-utility-completely-pointless-100-yours-and-two-cta-buttons-buy-now-and-join-community",
@@ -91,6 +89,94 @@
         "REQ-10"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-uploaded-tweet-screenshot-image-showing-first-squawk-firstsquawk-tweeting-crypto-is-pointless-not-even-the-white-house-can-fix-that-ny-times-as-a-visible-element-directly-beneath-the-navigation-header-above-the-hero-section-or-as-the-first-content-block-below-the-nav-bar-display-it-centered-and-styled-to-fit-the-site-s-dark-theme",
+      "title": "Add the uploaded tweet screenshot image (showing First Squawk @FirstSquawk tweeting 'CRYPTO IS POINTLESS. NOT EVEN THE WHITE HOUSE CAN FIX THAT. - NY TIMES') as a visible element directly beneath the navigation header, above the hero section or as the first content block below the nav bar. Display it centered and styled to fit the site's dark theme.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-0-buy-sell-tax-card-box-entirely-from-the-tokenomics-section-the-remaining-tokenomics-cards-should-reflow-or-rebalance-their-grid-layout-to-fill-the-space-cleanly",
+      "title": "Remove the '0% Buy & Sell Tax' card/box entirely from the Tokenomics section. The remaining tokenomics cards should reflow or rebalance their grid layout to fill the space cleanly.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-about-section-rename-the-subsection-heading-the-birth-of-pointlessness-to-the-birth-of-pointless-update-the-copy-in-that-subsection-to-include-the-origin-story-the-coin-was-inspired-by-a-tweet-from-first-squawk-firstsquawk-quoting-the-ny-times-headline-crypto-is-pointless-not-even-the-white-house-can-fix-that-this-viral-moment-is-presented-as-the-true-birth-of-pointless-write-the-copy-in-a-humorous-meme-style-tone-consistent-with-the-rest-of-the-site",
+      "title": "In the About section, rename the subsection heading 'The Birth of Pointlessness' to 'The Birth of Pointless'. Update the copy in that subsection to include the origin story: the coin was inspired by a tweet from First Squawk (@FirstSquawk) quoting the NY Times headline 'CRYPTO IS POINTLESS. NOT EVEN THE WHITE HOUSE CAN FIX THAT.' — this viral moment is presented as the true birth of $POINTLESS. Write the copy in a humorous meme-style tone consistent with the rest of the site.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-entire-roadmapsection-component-from-the-page-delete-or-empty-the-roadmapsection-tsx-file-and-remove-its-import-and-usage-from-app-tsx-also-remove-the-roadmap-anchor-link-from-the-navigation-bar",
+      "title": "Remove the entire RoadmapSection component from the page. Delete or empty the RoadmapSection.tsx file and remove its import and usage from App.tsx. Also remove the 'Roadmap' anchor link from the Navigation bar.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-tweetbanner-component-the-tweet-screenshot-image-placed-beneath-the-navigation-header-from-the-page-remove-its-import-and-usage-from-app-tsx",
+      "title": "Remove the TweetBanner component (the tweet screenshot image placed beneath the navigation header) from the page. Remove its import and usage from App.tsx.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contract-address-ca-displayed-in-the-tokenomicssection-to-d9amokaerettwvavdrd3nvwcwmas3dj5hgpwak47bonk-replace-any-existing-placeholder-or-previous-ca-value-with-this-exact-string-wherever-a-contract-address-is-shown-on-the-site-e-g-the-address-display-block-in-tokenomicssection",
+      "title": "Update the contract address (CA) displayed in the TokenomicsSection to 'D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk'. Replace any existing placeholder or previous CA value with this exact string wherever a contract address is shown on the site (e.g. the address display block in TokenomicsSection).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-howtobuysection-component-to-replace-all-ethereum-eth-references-with-solana-sol-equivalents-change-the-four-steps-to-1-create-a-phantom-wallet-download-the-phantom-wallet-app-or-browser-extension-at-phantom-app-2-get-sol-buy-sol-from-any-major-exchange-coinbase-binance-kraken-and-send-it-to-your-phantom-wallet-3-swap-on-jupiter-go-to-jup-ag-jupiter-aggregator-or-raydium-connect-your-phantom-wallet-paste-the-pointless-contract-address-and-swap-sol-for-pointless-4-hold-and-do-nothing-sit-back-and-embrace-the-pointlessness-update-all-icons-labels-and-descriptive-copy-accordingly-so-no-eth-or-ethereum-references-remain",
+      "title": "Update the HowToBuySection component to replace all Ethereum/ETH references with Solana/SOL equivalents. Change the four steps to: (1) Create a Phantom Wallet — download the Phantom wallet app or browser extension at phantom.app; (2) Get SOL — buy SOL from any major exchange (Coinbase, Binance, Kraken) and send it to your Phantom wallet; (3) Swap on Jupiter — go to jup.ag (Jupiter aggregator) or Raydium, connect your Phantom wallet, paste the $POINTLESS contract address, and swap SOL for $POINTLESS; (4) Hold and Do Nothing — sit back and embrace the pointlessness. Update all icons, labels, and descriptive copy accordingly so no ETH or Ethereum references remain.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-liquidity-locked-card-element-entirely-from-the-tokenomicssection-component-the-remaining-tokenomics-cards-should-reflow-or-rebalance-their-grid-layout-to-fill-the-space-cleanly-maintaining-visual-consistency-with-the-existing-bold-card-style",
+      "title": "Remove the 'Liquidity Locked' card/element entirely from the TokenomicsSection component. The remaining tokenomics cards should reflow or rebalance their grid layout to fill the space cleanly, maintaining visual consistency with the existing bold card style.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-aboutsection-component-within-the-the-birth-of-pointless-subsection-origin-story-copy-that-references-the-first-squawk-tweet-remove-any-mention-of-view-counts-or-the-word-views-e-g-tweet-view-counts-such-as-1-2m-views-or-similar-all-other-copy-in-that-subsection-should-remain-unchanged",
+      "title": "In the AboutSection component, within the 'The Birth of Pointless' subsection origin story copy that references the First Squawk tweet, remove any mention of view counts or the word 'views' (e.g. tweet view counts such as '1.2M views' or similar). All other copy in that subsection should remain unchanged.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-howtobuysection-component-to-reduce-to-three-steps-1-create-a-phantom-wallet-buy-sol-download-the-phantom-wallet-app-or-browser-extension-at-phantom-app-then-buy-sol-directly-within-the-phantom-app-2-swap-sol-for-pointless-on-phantom-open-the-swap-screen-in-phantom-paste-the-pointless-contract-address-d9amokaerettwvavdrd3nvwcwmas3dj5hgpwak47bonk-into-the-search-field-and-swap-your-sol-for-pointless-3-hold-and-do-nothing-sit-back-and-embrace-the-pointlessness-remove-all-references-to-jupiter-raydium-jup-ag-and-any-separate-get-sol-from-an-exchange-step-update-all-icons-labels-step-numbers-and-descriptive-copy-to-reflect-the-new-three-step-flow",
+      "title": "Update the HowToBuySection component to reduce to three steps: (1) 'Create a Phantom Wallet & Buy SOL' — download the Phantom wallet app or browser extension at phantom.app, then buy SOL directly within the Phantom app; (2) 'Swap SOL for $POINTLESS on Phantom' — open the swap screen in Phantom, paste the $POINTLESS contract address (D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk) into the search field, and swap your SOL for $POINTLESS; (3) 'Hold and Do Nothing' — sit back and embrace the pointlessness. Remove all references to Jupiter, Raydium, jup.ag, and any separate 'Get SOL from an exchange' step. Update all icons, labels, step numbers, and descriptive copy to reflect the new three-step flow.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-communitysection-component-to-remove-the-discord-card-and-the-telegram-card-entirely-replace-them-with-a-single-x-twitter-communities-card-linking-to-https-x-com-i-communities-2027059335088521312-the-card-should-follow-the-same-bold-social-card-style-as-the-existing-cards-update-any-cta-copy-or-descriptive-text-accordingly-so-there-are-no-remaining-references-to-discord-or-telegram-in-the-section",
+      "title": "Update the CommunitySection component to remove the Discord card and the Telegram card entirely. Replace them with a single X (Twitter) Communities card linking to https://x.com/i/communities/2027059335088521312. The card should follow the same bold social card style as the existing cards. Update any CTA copy or descriptive text accordingly so there are no remaining references to Discord or Telegram in the section.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -103,6 +189,80 @@
     {
       "id": "AR-2",
       "summary": "Use user-provided photo as the coin image throughout the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add user-provided coin origin photo under the header",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Remove the '0% buy and sell tax' box from the tokenomics/stats section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Rename 'The Birth of Pointlessness' section to 'The Birth of Pointless' and add lore that the coin was inspired by a New York Post article saying crypto is pointless",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Remove the entire Roadmap section from the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Remove the tweet/photo from the header/nav area",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Update the contract address (CA) displayed on the site to D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Update all chain references from ETH to Solana — change How to Buy instructions to use Phantom wallet, SOL, and Solana-based DEX (e.g. Jupiter/Raydium)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Audit the entire site (Navigation, HeroSection, AboutSection, TokenomicsSection, CommunitySection, Footer, and any other components) for any remaining references to ETH, Ethereum, or ERC-20 and replace them with SOL, Solana, or SPL equivalents as appropriate. Ensure the chain identity is consistently Solana across all visible copy.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Remove the 'Liquidity Locked' card/element from the Tokenomics section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "In the First Squawk breakdown/origin story copy, remove any mention of 'views' (e.g. tweet view count)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Update How to Buy steps: merge Step 1 and Step 2 into one step (Create Phantom wallet + buy SOL on Phantom), remove the separate Jupiter/Raydium swap step, and update Step 3 to be: swap SOL to $POINTLESS directly on Phantom by pasting the contract address into Phantom's search/swap",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Remove Discord and Telegram options from the Community section. Replace with a single X (Twitter) Communities link: https://x.com/i/communities/2027059335088521312",
       "reqIds": [],
       "status": "pending"
     }

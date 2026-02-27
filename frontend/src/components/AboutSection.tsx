@@ -89,6 +89,43 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+
+        {/* The Birth of Pointless */}
+        <div className="mt-24 max-w-3xl mx-auto text-center">
+          <div className="inline-block bg-gold/10 border border-gold/30 rounded-sm px-4 py-1.5 mb-6">
+            <span className="font-heading text-gold text-sm tracking-widest uppercase">Origin Story</span>
+          </div>
+          <h3 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+            The Birth of{' '}
+            <span className="shimmer-text">Pointless</span>
+          </h3>
+          <div
+            className="rounded-sm p-8 border border-gold/20 text-left space-y-5 text-foreground/70 text-lg leading-relaxed"
+            style={{ background: 'oklch(0.12 0.005 0)' }}
+          >
+            <p>
+              Every legend has an origin. Ours? A single tweet that broke the internet — and accidentally
+              created a movement.
+            </p>
+            <p>
+              On February 26, 2026, <span className="text-gold font-semibold">First Squawk</span> posted
+              a headline straight from the New York Post that read:{' '}
+              <span className="text-gold font-semibold italic">
+                "CRYPTO IS POINTLESS. NOT EVEN THE WHITE HOUSE CAN FIX THAT."
+              </span>
+            </p>
+            <p>
+              The suits meant it as a diss. We took it as a{' '}
+              <span className="text-gold font-semibold">business plan.</span>
+            </p>
+            <p>
+              If the New York Post says crypto is pointless, who are we to argue? We leaned in, embraced
+              the chaos, and launched the only coin brave enough to wear "pointless" as a badge of honor.
+              No utility. No promises. Just pure, unapologetic{' '}
+              <span className="text-gold font-semibold">$POINTLESS energy.</span> 🗞️🔥
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,32 +1,14 @@
-import { SiX, SiTelegram, SiDiscord } from 'react-icons/si';
+import { SiX } from 'react-icons/si';
 
 const socials = [
   {
-    name: 'Twitter / X',
-    handle: '@PointlessCoin',
-    description: 'Follow us for memes, updates, and the occasional existential crisis about crypto.',
+    name: 'X Community',
+    handle: 'x.com/i/communities',
+    description: 'Follow us for memes, updates, and the occasional existential crisis about crypto. Join the Pointless Army on X.',
     icon: SiX,
-    href: '#',
+    href: 'https://x.com/i/communities/2027059335088521312',
     color: 'hover:border-foreground/40',
     iconBg: 'bg-foreground/10',
-  },
-  {
-    name: 'Telegram',
-    handle: 't.me/PointlessCoin',
-    description: 'Join 10,000+ degens who have accepted the pointlessness and are thriving.',
-    icon: SiTelegram,
-    href: '#',
-    color: 'hover:border-blue-400/40',
-    iconBg: 'bg-blue-400/10',
-  },
-  {
-    name: 'Discord',
-    handle: 'discord.gg/pointless',
-    description: 'Our Discord is where the real conversations happen. And by conversations, we mean memes.',
-    icon: SiDiscord,
-    href: '#',
-    color: 'hover:border-indigo-400/40',
-    iconBg: 'bg-indigo-400/10',
   },
 ];
 
@@ -59,14 +41,16 @@ export default function CommunitySection() {
         </div>
 
         {/* Social Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="flex justify-center mb-16">
           {socials.map((social) => {
             const Icon = social.icon;
             return (
               <a
                 key={social.name}
                 href={social.href}
-                className={`card-dark rounded-sm p-8 flex flex-col gap-5 group cursor-pointer ${social.color}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`card-dark rounded-sm p-8 flex flex-col gap-5 group cursor-pointer w-full max-w-md ${social.color}`}
               >
                 <div className="flex items-center gap-4">
                   <div
@@ -122,9 +106,14 @@ export default function CommunitySection() {
               <button className="btn-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase">
                 🚀 Buy $POINTLESS
               </button>
-              <button className="btn-outline-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase">
-                💬 Join Telegram
-              </button>
+              <a
+                href="https://x.com/i/communities/2027059335088521312"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase inline-flex items-center justify-center"
+              >
+                𝕏 Join Community
+              </a>
             </div>
           </div>
         </div>

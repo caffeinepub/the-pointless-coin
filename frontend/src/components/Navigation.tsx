@@ -5,7 +5,6 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Tokenomics', href: '#tokenomics' },
   { label: 'How to Buy', href: '#how-to-buy' },
-  { label: 'Roadmap', href: '#roadmap' },
   { label: 'Community', href: '#community' },
 ];
 

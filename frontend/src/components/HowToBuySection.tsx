@@ -1,36 +1,28 @@
-import { Wallet, ArrowRightLeft, TrendingUp, Sofa } from 'lucide-react';
+import { Wallet, ArrowRightLeft, Sofa } from 'lucide-react';
 
 const steps = [
   {
     number: '01',
     icon: Wallet,
-    title: 'Create a Wallet',
+    title: 'Create a Phantom Wallet & Buy SOL',
     description:
-      'Download MetaMask or any Web3 wallet. Write down your seed phrase. Hide it somewhere your cat can\'t find it.',
-    tip: 'MetaMask, Trust Wallet, or Phantom all work great.',
+      'Download Phantom from phantom.app — the go-to wallet for Solana. Install the browser extension or mobile app, create a new wallet, and guard your seed phrase with your life. Once set up, buy SOL directly inside the Phantom app.',
+    tip: 'Get Phantom at phantom.app. Available on Chrome, Firefox, iOS & Android. Buy SOL right inside the app — no exchange needed.',
   },
   {
     number: '02',
-    icon: TrendingUp,
-    title: 'Get Some ETH',
+    icon: ArrowRightLeft,
+    title: 'Swap SOL for $POINTLESS on Phantom',
     description:
-      'Buy ETH from any exchange (Coinbase, Binance, Kraken). Transfer it to your wallet. Try not to panic at the gas fees.',
-    tip: 'You\'ll need a little extra ETH for gas. Ethereum is expensive. We know.',
+      'Open the Swap screen inside Phantom, paste the $POINTLESS contract address into the search field, and swap your SOL for $POINTLESS. That\'s it — you now own something gloriously pointless.',
+    tip: 'CA: D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk — paste it into Phantom\'s swap search.',
   },
   {
     number: '03',
-    icon: ArrowRightLeft,
-    title: 'Swap for $POINTLESS',
-    description:
-      'Head to Uniswap, paste the $POINTLESS contract address, set slippage to 1-2%, and swap. Congratulations, you now own something pointless.',
-    tip: 'Set slippage to 1-2% for a smooth swap.',
-  },
-  {
-    number: '04',
     icon: Sofa,
     title: 'Hold & Do Nothing',
     description:
-      'This is the most important step. Do absolutely nothing. Don\'t panic sell. Don\'t check the price every 5 minutes. Just... hold.',
+      'This is the most important step. Do absolutely nothing. Don\'t panic sell. Don\'t check the price every 5 minutes. Just... hold. Embrace the pointlessness.',
     tip: 'Seriously. Just hold. That\'s it. That\'s the whole strategy.',
   },
 ];
@@ -57,20 +49,20 @@ export default function HowToBuySection() {
             <span className="shimmer-text">Pointlessly Easy</span>
           </h2>
           <p className="text-foreground/50 text-lg max-w-xl mx-auto">
-            Four simple steps to owning the most pointless coin in crypto. Even your grandma could do it.
+            Three simple steps to owning the most pointless coin on Solana. Even your grandma could do it.
             (Please don't tell your grandma.)
           </p>
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
               <div key={step.number} className="relative">
                 {/* Connector line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-10 left-full w-full h-px bg-gradient-to-r from-gold/30 to-transparent z-10 -translate-y-1/2" />
+                  <div className="hidden md:block absolute top-10 left-full w-full h-px bg-gradient-to-r from-gold/30 to-transparent z-10 -translate-y-1/2" />
                 )}
 
                 <div className="card-dark rounded-sm p-6 h-full flex flex-col gap-4">

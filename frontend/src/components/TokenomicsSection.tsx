@@ -1,4 +1,4 @@
-import { Coins, Lock, Percent, Flame } from 'lucide-react';
+import { Coins, Flame } from 'lucide-react';
 
 const stats = [
   {
@@ -7,22 +7,6 @@ const stats = [
     value: '1,000,000,000',
     unit: '$POINTLESS',
     description: 'Because 1 billion sounds impressive and we like big numbers.',
-    color: 'from-gold/20 to-gold/5',
-  },
-  {
-    icon: Percent,
-    label: 'Buy/Sell Tax',
-    value: '0%',
-    unit: 'Tax',
-    description: "We're not greedy. We're pointless. There's a difference.",
-    color: 'from-gold/20 to-gold/5',
-  },
-  {
-    icon: Lock,
-    label: 'Liquidity',
-    value: '100%',
-    unit: 'Locked',
-    description: 'Locked forever. We can\'t rug you even if we wanted to. (We don\'t.)',
     color: 'from-gold/20 to-gold/5',
   },
   {
@@ -35,9 +19,13 @@ const stats = [
   },
 ];
 
-const contractAddress = '0x...POINTLESS...0x';
+const contractAddress = 'D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk';
 
 export default function TokenomicsSection() {
+  const handleCopy = () => {
+    navigator.clipboard.writeText(contractAddress);
+  };
+
   return (
     <section id="tokenomics" className="py-24 md:py-32 relative overflow-hidden"
       style={{ background: 'oklch(0.12 0.005 0)' }}
@@ -65,8 +53,8 @@ export default function TokenomicsSection() {
           </p>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* Stats Grid — 2 cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
           {stats.map((stat) => {
             const Icon = stat.icon;
             return (
@@ -109,6 +97,12 @@ export default function TokenomicsSection() {
             <code className="font-mono text-gold text-sm md:text-base break-all">
               {contractAddress}
             </code>
+            <button
+              onClick={handleCopy}
+              className="btn-gold px-3 py-1.5 rounded-sm text-xs font-heading tracking-wider uppercase shrink-0"
+            >
+              Copy
+            </button>
           </div>
           <p className="text-foreground/30 text-xs mt-3">
             Always verify the contract address before buying. Don't get rugged by fakes.

@@ -1,4 +1,4 @@
-import { SiX, SiTelegram, SiDiscord } from 'react-icons/si';
+import { SiX } from 'react-icons/si';
 import { Heart } from 'lucide-react';
 
 export default function Footer() {
@@ -60,20 +60,15 @@ export default function Footer() {
               Community
             </h4>
             <div className="flex gap-3">
-              {[
-                { icon: SiX, href: '#', label: 'Twitter' },
-                { icon: SiTelegram, href: '#', label: 'Telegram' },
-                { icon: SiDiscord, href: '#', label: 'Discord' },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="w-10 h-10 rounded-sm border border-gold/20 flex items-center justify-center text-foreground/50 hover:text-gold hover:border-gold/50 transition-all duration-200"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
+              <a
+                href="https://x.com/i/communities/2027059335088521312"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X Community"
+                className="w-10 h-10 rounded-sm border border-gold/20 flex items-center justify-center text-foreground/50 hover:text-gold hover:border-gold/50 transition-all duration-200"
+              >
+                <SiX size={18} />
+              </a>
             </div>
           </div>
         </div>
