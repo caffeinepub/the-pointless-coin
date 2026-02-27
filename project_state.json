@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 15,
+  "projectStateVersion": 17,
   "summary": "Build a meme coin website inspired by theuselesscoin.com, rebranded as 'The Pointless Coin'. The site should replicate the look and feel of the original but use custom branding and a user-provided coin image.",
   "architectural_notes": [
     "Single-page meme coin website, static or near-static with fun/animated UI elements",
@@ -177,6 +177,14 @@
         "REQ-22"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-audit-all-frontend-components-tokenomicssection-tickerbanner-herosection-aboutsection-howtobuysection-navigation-communitysection-footer-and-any-other-files-and-remove-every-visible-instance-of-0-tax-0-percent-tax-0-buy-sell-tax-zero-tax-or-any-equivalent-phrasing-referencing-a-0-tax-rate-this-includes-card-labels-badge-text-ticker-phrases-tooltips-and-body-copy-do-not-replace-removed-text-with-alternative-tax-copy-simply-omit-it-entirely",
+      "title": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or any equivalent phrasing referencing a 0% tax rate. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative tax copy — simply omit it entirely.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -263,6 +271,12 @@
     {
       "id": "AR-15",
       "summary": "Remove Discord and Telegram options from the Community section. Replace with a single X (Twitter) Communities link: https://x.com/i/communities/2027059335088521312",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Remove all mentions of '0% tax' or '0 percent tax' from anywhere on the site",
       "reqIds": [],
       "status": "pending"
     }

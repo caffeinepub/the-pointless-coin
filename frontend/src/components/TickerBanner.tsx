@@ -4,7 +4,6 @@ const tickerItems = [
   '🔥 NO UTILITY = PURE FREEDOM',
   '🌕 MOON OR BUST',
   '💰 1 BILLION SUPPLY',
-  '🤝 0% TAX',
   '🔒 LIQUIDITY LOCKED',
   '😂 COMPLETELY POINTLESS',
   '🚀 $POINTLESS TO THE MOON',
@@ -12,7 +11,6 @@ const tickerItems = [
   '🔥 NO UTILITY = PURE FREEDOM',
   '🌕 MOON OR BUST',
   '💰 1 BILLION SUPPLY',
-  '🤝 0% TAX',
   '🔒 LIQUIDITY LOCKED',
   '😂 COMPLETELY POINTLESS',
 ];

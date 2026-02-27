@@ -1,13 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Remove Discord and Telegram from the Community section and replace them with a single X Communities card.
+**Goal:** Remove all "0% tax" references from every visible part of the frontend.
 
 **Planned changes:**
-- Remove the Discord card from the CommunitySection component
-- Remove the Telegram card from the CommunitySection component
-- Add a single X Communities card linking to https://x.com/i/communities/2027059335088521312, styled consistently with the existing bold social card style
-- Update any CTA or descriptive text in the section to remove references to Discord and Telegram
-- Remove Discord and Telegram icons from the Footer social links, retaining only the X link
+- Audit and remove every instance of "0% tax", "0% buy & sell tax", "0 percent tax", "zero tax", or equivalent phrasing from all components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files)
+- Do not replace removed text with any alternative tax-related copy
+- Ensure surrounding elements reflow cleanly after removal
 
-**User-visible outcome:** The Community section displays only one social card — X Communities — with no Discord or Telegram options visible anywhere on the page.
+**User-visible outcome:** No section of the site displays any "0% tax" or equivalent tax-rate text anywhere on the page.

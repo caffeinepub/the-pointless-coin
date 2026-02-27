@@ -1,29 +1,58 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove Discord & Telegram from Community section; replace with single X Communities link",
+  "title": "Remove all '0% tax' references from the site",
   "requirements": [
     {
-      "id": "REQ-22",
-      "summary": "Update CommunitySection to remove Discord and Telegram cards, replace with single X Communities card linking to https://x.com/i/communities/2027059335088521312, and remove Discord/Telegram social icons from Footer",
+      "id": "REQ-23",
+      "summary": "Remove all visible '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', and equivalent phrasing from every frontend component, including TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, and Footer",
       "acceptanceCriteria": [
-        "The Discord social card is no longer visible in the CommunitySection.",
-        "The Telegram social card is no longer visible in the CommunitySection.",
-        "A single X Communities card is displayed, linking to https://x.com/i/communities/2027059335088521312.",
-        "The X Communities card uses the same bold card style as the rest of the section.",
-        "No references to Discord or Telegram remain in the CommunitySection component.",
-        "The Footer social icon links also have Discord and Telegram icons removed, with only the X link retained."
+        "No visible text on any page section contains '0% tax', '0% buy & sell tax', '0 percent tax', 'zero tax', or any equivalent phrasing.",
+        "The TickerBanner marquee contains no tax-related phrases.",
+        "The TokenomicsSection contains no tax-related card, badge, or label.",
+        "All other components (Hero, About, Navigation, Footer, Community) are free of any 0% tax references.",
+        "No layout breakage occurs from removing the text; surrounding elements reflow cleanly."
       ],
       "file_operations": [
         {
+          "path": "frontend/src/components/TickerBanner.tsx",
+          "operation": "modify",
+          "description": "Remove all '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or equivalent phrases from the marquee banner phrases array. Ensure the remaining phrases still flow naturally in the ticker animation without gaps or awkward spacing."
+        },
+        {
+          "path": "frontend/src/components/TokenomicsSection.tsx",
+          "operation": "modify",
+          "description": "Remove any tokenomics card, badge, label, or text element that displays '0% tax', '0% buy & sell tax', 'zero tax', or equivalent phrasing. If a dedicated tax card exists, remove it entirely. Update the grid layout if necessary to accommodate the removal without breaking the visual structure."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Audit the headline, tagline, badge text, and any tooltip or overlay elements for '0% tax', '0 percent tax', 'zero tax', or equivalent phrases. Remove all matches. Ensure the hero section remains visually balanced after the removal."
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Scan all body copy, badge text, and floating element labels for '0% tax', '0% buy & sell tax', 'zero tax', or equivalent phrasing. Remove all instances. Verify that the humorous meme-coin copy remains cohesive without the removed text."
+        },
+        {
+          "path": "frontend/src/components/HowToBuySection.tsx",
+          "operation": "modify",
+          "description": "Check all step descriptions, tips, and callout text for '0% tax', '0 percent tax', 'zero tax', or equivalent phrases. Remove any matches. Ensure the three-step guide flow remains clear and complete."
+        },
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Inspect the navigation links, logo alt text, CTA button labels, and mobile menu items for '0% tax', '0% buy & sell tax', 'zero tax', or equivalent phrasing. Remove all instances. Confirm the navigation bar layout remains intact."
+        },
+        {
           "path": "frontend/src/components/CommunitySection.tsx",
           "operation": "modify",
-          "description": "Remove the Discord and Telegram social platform cards from the community section. Replace them with a single X Communities card that links to https://x.com/i/communities/2027059335088521312. Ensure the X Communities card maintains the same bold card styling as existing social cards. Update any descriptive text or CTA copy to remove all references to Discord and Telegram."
+          "description": "Review the community card copy, CTA banner text, and button labels for '0% tax', '0 percent tax', 'zero tax', or equivalent phrases. Remove all matches. Ensure the CTA banner and community card remain visually cohesive."
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Remove the Discord and Telegram social icon links from the footer. Keep only the X (Twitter) social icon link. Ensure the footer layout remains clean and properly styled after removing the two icons."
+          "description": "Audit the legal disclaimer, quick-links text, brand tagline, and any tooltip or footnote text for '0% tax', '0% buy & sell tax', 'zero tax', or equivalent phrasing. Remove all instances. Verify the footer layout and disclaimer readability remain intact."
         }
       ]
     }

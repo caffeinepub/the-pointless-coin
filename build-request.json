@@ -1,41 +1,38 @@
 {
   "kind": "build_request",
-  "title": "Remove Discord & Telegram from Community section; replace with single X Communities link",
+  "title": "Remove all '0% tax' references from the site",
   "projectName": "The Pointless Coin",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-22",
-      "text": "Update the CommunitySection component to remove the Discord card and the Telegram card entirely. Replace them with a single X (Twitter) Communities card linking to https://x.com/i/communities/2027059335088521312. The card should follow the same bold social card style as the existing cards. Update any CTA copy or descriptive text accordingly so there are no remaining references to Discord or Telegram in the section.",
+      "id": "REQ-23",
+      "text": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or any equivalent phrasing referencing a 0% tax rate. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative tax copy — simply omit it entirely.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-1"
         ],
         "quotes": [
-          "remove the discord option make this link the X directory https://x.com/i/communities/2027059335088521312 remove the telgram also"
+          "remove anything on the site that says 0 percent tax"
         ]
       },
       "acceptanceCriteria": [
-        "The Discord social card is no longer visible in the CommunitySection.",
-        "The Telegram social card is no longer visible in the CommunitySection.",
-        "A single X Communities card is displayed, linking to https://x.com/i/communities/2027059335088521312.",
-        "The X Communities card uses the same bold card style as the rest of the section.",
-        "No references to Discord or Telegram remain in the CommunitySection component.",
-        "The Footer social icon links also have Discord and Telegram icons removed, with only the X link retained."
+        "No visible text on any page section contains '0% tax', '0% buy & sell tax', '0 percent tax', 'zero tax', or any equivalent phrasing.",
+        "The TickerBanner marquee contains no tax-related phrases.",
+        "The TokenomicsSection contains no tax-related card, badge, or label.",
+        "All other components (Hero, About, Navigation, Footer, Community) are free of any 0% tax references.",
+        "No layout breakage occurs from removing the text; surrounding elements reflow cleanly."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files listed in frontend.immutablePaths.",
-    "Preserve all other sections and components unchanged.",
-    "The X Communities URL https://x.com/i/communities/2027059335088521312 must be used exactly as provided."
+    "Do not introduce any new tax-related copy as a replacement.",
+    "Do not modify immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui."
   ],
   "nonGoals": [
-    "Adding any new social platforms beyond the X Communities link.",
-    "Changing the visual theme or layout of the Community section beyond removing the two cards.",
-    "Modifying any other sections (Hero, About, Tokenomics, HowToBuy, Navigation, Footer beyond social icons).",
-    "Backend changes."
+    "Adding or changing any other tokenomics figures or copy.",
+    "Modifying the backend in any way.",
+    "Changing any visual theme, layout, or branding unrelated to the tax text removal."
   ],
   "imageRequirements": {
     "required": [],

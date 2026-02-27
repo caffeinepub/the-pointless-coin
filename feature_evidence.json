@@ -2,11 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-communitysection-component-to-remove-the-discord-card-and-the-telegram-card-entirely-replace-them-with-a-single-x-twitter-communities-card-linking-to-https-x-com-i-communities-2027059335088521312-the-card-should-follow-the-same-bold-social-card-style-as-the-existing-cards-update-any-cta-copy-or-descriptive-text-accordingly-so-there-are-no-remaining-references-to-discord-or-telegram-in-the-section",
-      "featureTitle": "Update the CommunitySection component to remove the Discord card and the Telegram card entirely. Replace them with a single X (Twitter) Communities card linking to https://x.com/i/communities/2027059335088521312. The card should follow the same bold social card style as the existing cards. Update any CTA copy or descriptive text accordingly so there are no remaining references to Discord or Telegram in the section.",
+      "featureId": "feature-audit-all-frontend-components-tokenomicssection-tickerbanner-herosection-aboutsection-howtobuysection-navigation-communitysection-footer-and-any-other-files-and-remove-every-visible-instance-of-0-tax-0-percent-tax-0-buy-sell-tax-zero-tax-or-any-equivalent-phrasing-referencing-a-0-tax-rate-this-includes-card-labels-badge-text-ticker-phrases-tooltips-and-body-copy-do-not-replace-removed-text-with-alternative-tax-copy-simply-omit-it-entirely",
+      "featureTitle": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or any equivalent phrasing referencing a 0% tax rate. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative tax copy — simply omit it entirely.",
       "files": [
-        "frontend/src/components/CommunitySection.tsx",
-        "frontend/src/components/Footer.tsx"
+        "frontend/src/components/TickerBanner.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -16,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-22"
+        "REQ-23"
       ],
       "confidence": "high"
     }
