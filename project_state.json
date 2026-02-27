@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a meme coin website inspired by theuselesscoin.com, rebranded as 'The Pointless Coin'. The site should replicate the look and feel of the original but use custom branding and a user-provided coin image.",
+  "architectural_notes": [
+    "Single-page meme coin website, static or near-static with fun/animated UI elements",
+    "Branding: 'The Pointless Coin' replacing all references to 'The Useless Coin'"
+  ],
+  "known_issues": [
+    "User has not yet provided the coin photo — placeholder needed until image is supplied"
+  ],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- A shiny gold coin with a bold letter 'P' embossed in the center, cartoon-style with a gleaming metallic finish and a slight comic glow effect around the edge, circular format (pointless-coin.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-full-page-hero-section-with-a-large-animated-coin-logo-using-the-generated-coin-image-the-headline-the-pointless-coin-a-punchy-meme-style-tagline-e-g-absolutely-no-utility-completely-pointless-100-yours-and-two-cta-buttons-buy-now-and-join-community",
+      "title": "Create a full-page hero section with a large animated coin logo (using the generated coin image), the headline 'THE POINTLESS COIN', a punchy meme-style tagline (e.g. 'Absolutely no utility. Completely pointless. 100% yours.'), and two CTA buttons: 'Buy Now' and 'Join Community'.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-sticky-navigation-bar-with-the-coin-logo-the-name-the-pointless-coin-and-anchor-links-to-all-page-sections-e-g-about-tokenomics-how-to-buy-roadmap-community",
+      "title": "Create a sticky navigation bar with the coin logo, the name 'The Pointless Coin', and anchor links to all page sections (e.g. About, Tokenomics, How to Buy, Roadmap, Community).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-section-explaining-the-coin-in-a-humorous-self-aware-meme-style-emphasising-that-the-pointless-coin-has-no-utility-no-roadmap-promises-and-no-serious-purpose-just-like-the-original-theuselesscoin-com-framing",
+      "title": "Create an 'About' section explaining the coin in a humorous, self-aware meme style — emphasising that The Pointless Coin has no utility, no roadmap promises, and no serious purpose, just like the original theuselesscoin.com framing.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-tokenomics-section-displaying-key-stats-total-supply-tax-liquidity-lock-etc-in-a-visually-bold-card-or-grid-layout-with-meme-style-labelling-e-g-1-billion-supply-because-why-not",
+      "title": "Create a 'Tokenomics' section displaying key stats (total supply, tax, liquidity lock, etc.) in a visually bold card or grid layout with meme-style labelling (e.g. '1 Billion Supply — Because why not').",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-how-to-buy-section-with-numbered-steps-e-g-create-a-wallet-get-eth-sol-swap-for-pointless-hold-and-do-nothing-including-icons-or-illustrations-for-each-step",
+      "title": "Create a 'How to Buy' section with numbered steps (e.g. Create a wallet → Get ETH/SOL → Swap for $POINTLESS → Hold and do nothing) including icons or illustrations for each step.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-roadmap-section-presented-as-a-satirical-timeline-with-milestones-that-poke-fun-at-typical-crypto-roadmaps-e-g-phase-1-launch-phase-2-go-up-phase-3-we-figure-it-out-phase-4-moon",
+      "title": "Create a 'Roadmap' section presented as a satirical timeline with milestones that poke fun at typical crypto roadmaps (e.g. Phase 1: Launch. Phase 2: Go up. Phase 3: We figure it out. Phase 4: Moon?).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-community-section-with-links-buttons-to-social-platforms-twitter-x-telegram-discord-styled-as-large-bold-social-cards-and-a-fun-call-to-action-encouraging-users-to-join",
+      "title": "Create a 'Community' section with links/buttons to social platforms (Twitter/X, Telegram, Discord) styled as large, bold social cards, and a fun call-to-action encouraging users to join.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-footer-with-the-coin-name-a-short-disclaimer-this-is-a-meme-coin-with-no-intrinsic-value-or-financial-utility-copyright-notice-and-social-links",
+      "title": "Create a footer with the coin name, a short disclaimer ('This is a meme coin with no intrinsic value or financial utility'), copyright notice, and social links.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-high-contrast-meme-coin-visual-theme-throughout-the-site-deep-black-background-vibrant-yellow-gold-accent-color-to-reflect-the-coin-branding-large-chunky-display-fonts-glowing-or-neon-effects-on-key-elements-and-playful-micro-animations-e-g-coin-spin-button-hover-glow-the-overall-aesthetic-should-feel-energetic-irreverent-and-viral",
+      "title": "Apply a bold, high-contrast meme-coin visual theme throughout the site: deep black background, vibrant yellow/gold accent color to reflect the coin branding, large chunky display fonts, glowing or neon effects on key elements, and playful micro-animations (e.g. coin spin, button hover glow). The overall aesthetic should feel energetic, irreverent, and viral.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-generated-coin-image-pointless-coin-dim-512x512-png-as-the-primary-coin-visual-throughout-the-site-in-the-hero-the-nav-logo-the-about-section-and-any-other-relevant-locations",
+      "title": "Use the generated coin image (pointless-coin.dim_512x512.png) as the primary coin visual throughout the site — in the hero, the nav logo, the about section, and any other relevant locations.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Replicate theuselesscoin.com layout and design for 'The Pointless Coin'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Use user-provided photo as the coin image throughout the site",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "The Pointless Coin",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-27T00:06:04.539Z",
+  "summary": "The diff implements a comprehensive meme coin website with all major sections, visual theme, and coin image integration. All 10 requirements appear to be substantially implemented. The hero coin uses a float/bob animation (animate-coin-float) which satisfies the AC allowing 'spin or float'. The coin image path in components uses '/assets/generated/pointless-coin.dim_512x512.png' matching the requirement. A TickerBanner component was added which was not requested. The main.tsx wraps the app in InternetIdentityProvider which relates to auth — a stated non-goal — but appears to be framework scaffold boilerplate.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "TickerBanner component — a horizontally scrolling marquee banner with meme-coin slogans placed between the hero and about sections",
+      "reason": "No requirement or acceptance criterion requested a ticker/marquee banner component. This is an extra UI element not specified in the build request.",
+      "evidence": [
+        "frontend/src/components/TickerBanner.tsx",
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "description": "InternetIdentityProvider and useInternetIdentity/useActor hooks integrated into main.tsx and included in the project",
+      "reason": "The build request explicitly states 'No user authentication' and 'No wallet connection' as non-goals, yet Internet Identity authentication infrastructure is included in the project.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    }
+  ],
+  "confidence": 0.88,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AboutSection.tsx",
+    "frontend/src/components/CommunitySection.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/HowToBuySection.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/RoadmapSection.tsx",
+    "frontend/src/components/TickerBanner.tsx",
+    "frontend/src/components/TokenomicsSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}
