@@ -1,10 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Remove all "Liquidity Locked" references from every component across the site.
+**Goal:** Remove the contract address display from Step 2 in the HowToBuySection component.
 
 **Planned changes:**
-- Remove every instance of "Liquidity Locked", "liquidity locked", "liq locked", or equivalent phrasing from TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other components containing such text
-- Ensure affected layouts reflow cleanly without the removed elements, leaving no visual gaps or broken grids
+- Remove the contract address text (and any associated label or copy button) shown under Step 2 ("Swap SOL for $POINTLESS on Phantom") in the HowToBuySection
+- Leave all other content in Step 2 (title, description, icon) unchanged
+- Leave Steps 1 and 3 unchanged
 
-**User-visible outcome:** No mention of "Liquidity Locked" appears anywhere on the site, and all sections display cleanly without that text.
+**User-visible outcome:** Step 2 in the How To Buy section no longer shows the contract address beneath it.

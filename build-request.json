@@ -1,38 +1,32 @@
 {
   "kind": "build_request",
-  "title": "Remove all 'Liquidity Locked' references site-wide",
-  "projectName": "The Pointless Coin",
+  "title": "Remove contract address displayed under Step 2 in HowToBuySection",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-24",
-      "text": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of 'Liquidity Locked', 'liquidity locked', 'liq locked', or any equivalent phrasing referencing a liquidity lock. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative copy — simply omit it entirely. The remaining layout should reflow cleanly without the removed elements.",
+      "id": "REQ-25",
+      "text": "In the HowToBuySection component, remove the contract address (CA) text that is displayed beneath or within Step 2 ('Swap SOL for $POINTLESS on Phantom'). Do not replace it with any alternative copy — simply omit the CA display entirely from that step. All other content in the step (title, description, icon) should remain unchanged.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-last"
         ],
         "quotes": [
-          "remove any where it says liquidity locked on the site"
+          "remove the ca under step 2"
         ]
       },
       "acceptanceCriteria": [
-        "No instance of 'Liquidity Locked', 'liquidity locked', or equivalent phrasing appears anywhere on the rendered site",
-        "TokenomicsSection contains no liquidity locked card, badge, or text",
-        "TickerBanner contains no liquidity locked phrase",
-        "All other components (HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer) contain no liquidity locked text",
-        "The layout of any section that previously contained a liquidity locked element reflows cleanly without visual gaps or broken grids"
+        "The contract address string 'D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk' is no longer visible within Step 2 of the HowToBuySection.",
+        "No CA label, address text, or copy-button related to the contract address appears under Step 2.",
+        "All other content in Step 2 (heading, descriptive copy, icon) remains intact and unchanged.",
+        "Steps 1 and 3 are unaffected."
       ]
     }
   ],
-  "constraints": [
-    "Do not replace removed 'Liquidity Locked' text with any alternative copy",
-    "Do not modify files listed in frontend.immutablePaths"
-  ],
+  "constraints": [],
   "nonGoals": [
-    "Adding new tokenomics content or cards",
-    "Changing any other tokenomics values or copy",
-    "Backend changes"
+    "Do not remove the contract address from the TokenomicsSection or any other part of the site.",
+    "Do not modify any other steps in the HowToBuySection beyond removing the CA from Step 2."
   ],
   "imageRequirements": {
     "required": [],

@@ -14,8 +14,8 @@ const steps = [
     icon: ArrowRightLeft,
     title: 'Swap SOL for $POINTLESS on Phantom',
     description:
-      'Open the Swap screen inside Phantom, paste the $POINTLESS contract address into the search field, and swap your SOL for $POINTLESS. That\'s it — you now own something gloriously pointless.',
-    tip: 'CA: D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk — paste it into Phantom\'s swap search.',
+      'Open the Swap screen inside Phantom, search for $POINTLESS, and swap your SOL for $POINTLESS. That\'s it — you now own something gloriously pointless.',
+    tip: 'Use Phantom\'s built-in swap to find $POINTLESS and complete your trade in seconds.',
   },
   {
     number: '03',

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 19,
+  "projectStateVersion": 21,
   "summary": "Build a meme coin website inspired by theuselesscoin.com, rebranded as 'The Pointless Coin'. The site should replicate the look and feel of the original but use custom branding and a user-provided coin image.",
   "architectural_notes": [
     "Single-page meme coin website, static or near-static with fun/animated UI elements",
@@ -193,6 +193,14 @@
         "REQ-24"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-the-howtobuysection-component-remove-the-contract-address-ca-text-that-is-displayed-beneath-or-within-step-2-swap-sol-for-pointless-on-phantom-do-not-replace-it-with-any-alternative-copy-simply-omit-the-ca-display-entirely-from-that-step-all-other-content-in-the-step-title-description-icon-should-remain-unchanged",
+      "title": "In the HowToBuySection component, remove the contract address (CA) text that is displayed beneath or within Step 2 ('Swap SOL for $POINTLESS on Phantom'). Do not replace it with any alternative copy — simply omit the CA display entirely from that step. All other content in the step (title, description, icon) should remain unchanged.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -285,6 +293,12 @@
     {
       "id": "AR-16",
       "summary": "Remove all mentions of '0% tax' or '0 percent tax' from anywhere on the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Remove the contract address (CA) displayed under Step 2 in the HowToBuySection",
       "reqIds": [],
       "status": "pending"
     }

@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-audit-all-frontend-components-tokenomicssection-tickerbanner-herosection-aboutsection-howtobuysection-navigation-communitysection-footer-and-any-other-files-and-remove-every-visible-instance-of-liquidity-locked-liquidity-locked-liq-locked-or-any-equivalent-phrasing-referencing-a-liquidity-lock-this-includes-card-labels-badge-text-ticker-phrases-tooltips-and-body-copy-do-not-replace-removed-text-with-alternative-copy-simply-omit-it-entirely-the-remaining-layout-should-reflow-cleanly-without-the-removed-elements",
-      "featureTitle": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of 'Liquidity Locked', 'liquidity locked', 'liq locked', or any equivalent phrasing referencing a liquidity lock. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative copy — simply omit it entirely. The remaining layout should reflow cleanly without the removed elements.",
+      "featureId": "feature-in-the-howtobuysection-component-remove-the-contract-address-ca-text-that-is-displayed-beneath-or-within-step-2-swap-sol-for-pointless-on-phantom-do-not-replace-it-with-any-alternative-copy-simply-omit-the-ca-display-entirely-from-that-step-all-other-content-in-the-step-title-description-icon-should-remain-unchanged",
+      "featureTitle": "In the HowToBuySection component, remove the contract address (CA) text that is displayed beneath or within Step 2 ('Swap SOL for $POINTLESS on Phantom'). Do not replace it with any alternative copy — simply omit the CA display entirely from that step. All other content in the step (title, description, icon) should remain unchanged.",
       "files": [
-        "frontend/src/components/TickerBanner.tsx"
+        "frontend/src/components/HowToBuySection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-24"
+        "REQ-25"
       ],
       "confidence": "high"
     }

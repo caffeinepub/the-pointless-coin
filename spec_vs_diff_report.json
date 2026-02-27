@@ -1,14 +1,14 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-27T00:59:30.772Z",
-  "summary": "The diff modifies TickerBanner.tsx to remove 'Liquidity Locked' entries and updates TokenomicsSection (per the file summary) to remove the Liquidity Locked card. The file summaries confirm changes across the relevant components. REQ-24 appears largely satisfied based on the evidence available.",
+  "generatedAt": "2026-02-27T01:05:34.013Z",
+  "summary": "The diff shows that HowToBuySection.tsx has been modified to remove the contract address from Step 2. The updated component's Step 2 object contains no contract address string, CA label, or copy-button. The file summary for HowToBuySection.tsx explicitly states 'contract address removed' for Step 2. Steps 1 and 3 appear unchanged. The heading, description, and icon for Step 2 remain intact. REQ-25 appears to be fully implemented.",
   "missing_requirements": [],
   "hallucinated_features": [],
-  "confidence": 0.85,
+  "confidence": 0.95,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/TickerBanner.tsx",
+    "frontend/src/components/HowToBuySection.tsx",
     "project_state.json"
   ]
 }
