@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-audit-all-frontend-components-tokenomicssection-tickerbanner-herosection-aboutsection-howtobuysection-navigation-communitysection-footer-and-any-other-files-and-remove-every-visible-instance-of-0-tax-0-percent-tax-0-buy-sell-tax-zero-tax-or-any-equivalent-phrasing-referencing-a-0-tax-rate-this-includes-card-labels-badge-text-ticker-phrases-tooltips-and-body-copy-do-not-replace-removed-text-with-alternative-tax-copy-simply-omit-it-entirely",
-      "featureTitle": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or any equivalent phrasing referencing a 0% tax rate. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative tax copy — simply omit it entirely.",
+      "featureId": "feature-audit-all-frontend-components-tokenomicssection-tickerbanner-herosection-aboutsection-howtobuysection-navigation-communitysection-footer-and-any-other-files-and-remove-every-visible-instance-of-liquidity-locked-liquidity-locked-liq-locked-or-any-equivalent-phrasing-referencing-a-liquidity-lock-this-includes-card-labels-badge-text-ticker-phrases-tooltips-and-body-copy-do-not-replace-removed-text-with-alternative-copy-simply-omit-it-entirely-the-remaining-layout-should-reflow-cleanly-without-the-removed-elements",
+      "featureTitle": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of 'Liquidity Locked', 'liquidity locked', 'liq locked', or any equivalent phrasing referencing a liquidity lock. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative copy — simply omit it entirely. The remaining layout should reflow cleanly without the removed elements.",
       "files": [
         "frontend/src/components/TickerBanner.tsx"
       ],
@@ -15,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-23"
+        "REQ-24"
       ],
       "confidence": "high"
     }

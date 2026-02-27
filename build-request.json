@@ -1,38 +1,38 @@
 {
   "kind": "build_request",
-  "title": "Remove all '0% tax' references from the site",
+  "title": "Remove all 'Liquidity Locked' references site-wide",
   "projectName": "The Pointless Coin",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-23",
-      "text": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or any equivalent phrasing referencing a 0% tax rate. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative tax copy — simply omit it entirely.",
+      "id": "REQ-24",
+      "text": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of 'Liquidity Locked', 'liquidity locked', 'liq locked', or any equivalent phrasing referencing a liquidity lock. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative copy — simply omit it entirely. The remaining layout should reflow cleanly without the removed elements.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-latest"
         ],
         "quotes": [
-          "remove anything on the site that says 0 percent tax"
+          "remove any where it says liquidity locked on the site"
         ]
       },
       "acceptanceCriteria": [
-        "No visible text on any page section contains '0% tax', '0% buy & sell tax', '0 percent tax', 'zero tax', or any equivalent phrasing.",
-        "The TickerBanner marquee contains no tax-related phrases.",
-        "The TokenomicsSection contains no tax-related card, badge, or label.",
-        "All other components (Hero, About, Navigation, Footer, Community) are free of any 0% tax references.",
-        "No layout breakage occurs from removing the text; surrounding elements reflow cleanly."
+        "No instance of 'Liquidity Locked', 'liquidity locked', or equivalent phrasing appears anywhere on the rendered site",
+        "TokenomicsSection contains no liquidity locked card, badge, or text",
+        "TickerBanner contains no liquidity locked phrase",
+        "All other components (HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer) contain no liquidity locked text",
+        "The layout of any section that previously contained a liquidity locked element reflows cleanly without visual gaps or broken grids"
       ]
     }
   ],
   "constraints": [
-    "Do not introduce any new tax-related copy as a replacement.",
-    "Do not modify immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui."
+    "Do not replace removed 'Liquidity Locked' text with any alternative copy",
+    "Do not modify files listed in frontend.immutablePaths"
   ],
   "nonGoals": [
-    "Adding or changing any other tokenomics figures or copy.",
-    "Modifying the backend in any way.",
-    "Changing any visual theme, layout, or branding unrelated to the tax text removal."
+    "Adding new tokenomics content or cards",
+    "Changing any other tokenomics values or copy",
+    "Backend changes"
   ],
   "imageRequirements": {
     "required": [],

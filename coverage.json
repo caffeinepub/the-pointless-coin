@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-27T00:54:27.547Z",
+  "generatedAt": "2026-02-27T00:59:30.775Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,18 +11,19 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-23",
-        "summary": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of '0% tax', '0 percent tax', '0% buy & sell tax', 'zero tax', or any equivalent phrasing referencing a 0% tax rate. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative tax copy — simply omit it entirely.",
+        "id": "REQ-24",
+        "summary": "Audit all frontend components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files) and remove every visible instance of 'Liquidity Locked', 'liquidity locked', 'liq locked', or any equivalent phrasing referencing a liquidity lock. This includes card labels, badge text, ticker phrases, tooltips, and body copy. Do not replace removed text with alternative copy — simply omit it entirely. The remaining layout should reflow cleanly without the removed elements.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/TickerBanner.tsx",
           "frontend/src/components/TokenomicsSection.tsx",
+          "frontend/src/components/TickerBanner.tsx",
           "frontend/src/components/HeroSection.tsx",
           "frontend/src/components/AboutSection.tsx",
           "frontend/src/components/HowToBuySection.tsx",
           "frontend/src/components/Navigation.tsx",
           "frontend/src/components/CommunitySection.tsx",
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/App.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/TickerBanner.tsx"

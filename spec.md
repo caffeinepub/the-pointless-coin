@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Remove all "0% tax" references from every visible part of the frontend.
+**Goal:** Remove all "Liquidity Locked" references from every component across the site.
 
 **Planned changes:**
-- Audit and remove every instance of "0% tax", "0% buy & sell tax", "0 percent tax", "zero tax", or equivalent phrasing from all components (TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other files)
-- Do not replace removed text with any alternative tax-related copy
-- Ensure surrounding elements reflow cleanly after removal
+- Remove every instance of "Liquidity Locked", "liquidity locked", "liq locked", or equivalent phrasing from TokenomicsSection, TickerBanner, HeroSection, AboutSection, HowToBuySection, Navigation, CommunitySection, Footer, and any other components containing such text
+- Ensure affected layouts reflow cleanly without the removed elements, leaving no visual gaps or broken grids
 
-**User-visible outcome:** No section of the site displays any "0% tax" or equivalent tax-rate text anywhere on the page.
+**User-visible outcome:** No mention of "Liquidity Locked" appears anywhere on the site, and all sections display cleanly without that text.
