@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-27T01:05:34.016Z",
+  "generatedAt": "2026-02-27T18:25:04.875Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,14 +11,21 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-25",
-        "summary": "In the HowToBuySection component, remove the contract address (CA) text that is displayed beneath or within Step 2 ('Swap SOL for $POINTLESS on Phantom'). Do not replace it with any alternative copy — simply omit the CA display entirely from that step. All other content in the step (title, description, icon) should remain unchanged.",
+        "id": "REQ-29",
+        "summary": "Replace the current primary coin image (pointless-coin-new.dim_512x512.png) with the newly provided coin image (pointless-coin-p.dim_512x512.png) — a gold 3D coin with a white 'P' letter on it and a transparent background — across all components where the coin image appears, including HeroSection, Navigation (logo), AboutSection, CommunitySection CTA banner, and any other component currently rendering the coin image.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/HowToBuySection.tsx"
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/AboutSection.tsx",
+          "frontend/src/components/CommunitySection.tsx",
+          "frontend/src/components/Footer.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/HowToBuySection.tsx"
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/AboutSection.tsx",
+          "frontend/src/components/CommunitySection.tsx"
         ]
       }
     ]
@@ -28,7 +35,11 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/HowToBuySection.tsx",
+    "frontend/public/assets/generated/pointless-coin-p.dim_512x512.png",
+    "frontend/src/components/AboutSection.tsx",
+    "frontend/src/components/CommunitySection.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/Navigation.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

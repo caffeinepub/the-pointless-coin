@@ -61,7 +61,7 @@ export default function Footer() {
             </h4>
             <div className="flex gap-3">
               <a
-                href="https://x.com/i/communities/2027059335088521312"
+                href="https://x.com/i/communities/2027195726711697820"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X Community"

@@ -37,19 +37,19 @@ export default function HeroSection() {
         {/* Coin Image */}
         <div className="relative mb-8 md:mb-10">
           <div
-            className="absolute inset-0 rounded-full animate-pulse-glow"
+            className="absolute inset-0 animate-pulse-glow"
             style={{
               background: 'radial-gradient(circle, oklch(0.82 0.18 85 / 0.3) 0%, transparent 70%)',
               transform: 'scale(1.5)',
             }}
           />
           <img
-            src="/assets/generated/pointless-coin.dim_512x512.png"
+            src="/assets/generated/pointless-coin-p.dim_512x512.png"
             alt="The Pointless Coin"
-            className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover animate-coin-float"
+            className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain animate-coin-float"
             style={{
-              boxShadow:
-                '0 0 40px oklch(0.82 0.18 85 / 0.5), 0 0 80px oklch(0.82 0.18 85 / 0.3), 0 0 120px oklch(0.82 0.18 85 / 0.15)',
+              filter:
+                'drop-shadow(0 0 30px oklch(0.82 0.18 85 / 0.6)) drop-shadow(0 0 60px oklch(0.82 0.18 85 / 0.35))',
             }}
           />
         </div>

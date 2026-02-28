@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Remove the contract address display from Step 2 in the HowToBuySection component.
+**Goal:** Replace the current coin image with a new gold 3D coin (with white 'P' letter) that has a transparent background, across all components where the coin appears.
 
 **Planned changes:**
-- Remove the contract address text (and any associated label or copy button) shown under Step 2 ("Swap SOL for $POINTLESS on Phantom") in the HowToBuySection
-- Leave all other content in Step 2 (title, description, icon) unchanged
-- Leave Steps 1 and 3 unchanged
+- Edit the uploaded coin image to remove its white/checkered background, making it fully transparent, and save as `pointless-coin-p.dim_512x512.png`
+- Update HeroSection, Navigation logo, AboutSection, and CommunitySection CTA banner to reference the new `pointless-coin-p.dim_512x512.png` image
 
-**User-visible outcome:** Step 2 in the How To Buy section no longer shows the contract address beneath it.
+**User-visible outcome:** The coin image throughout the site is replaced with the new gold 3D "P" coin that blends seamlessly against the dark background with no white fill.

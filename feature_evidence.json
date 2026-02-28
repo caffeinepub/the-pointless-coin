@@ -2,10 +2,13 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-the-howtobuysection-component-remove-the-contract-address-ca-text-that-is-displayed-beneath-or-within-step-2-swap-sol-for-pointless-on-phantom-do-not-replace-it-with-any-alternative-copy-simply-omit-the-ca-display-entirely-from-that-step-all-other-content-in-the-step-title-description-icon-should-remain-unchanged",
-      "featureTitle": "In the HowToBuySection component, remove the contract address (CA) text that is displayed beneath or within Step 2 ('Swap SOL for $POINTLESS on Phantom'). Do not replace it with any alternative copy — simply omit the CA display entirely from that step. All other content in the step (title, description, icon) should remain unchanged.",
+      "featureId": "feature-replace-the-current-primary-coin-image-pointless-coin-new-dim-512x512-png-with-the-newly-provided-coin-image-pointless-coin-p-dim-512x512-png-a-gold-3d-coin-with-a-white-p-letter-on-it-and-a-transparent-background-across-all-components-where-the-coin-image-appears-including-herosection-navigation-logo-aboutsection-communitysection-cta-banner-and-any-other-component-currently-rendering-the-coin-image",
+      "featureTitle": "Replace the current primary coin image (pointless-coin-new.dim_512x512.png) with the newly provided coin image (pointless-coin-p.dim_512x512.png) — a gold 3D coin with a white 'P' letter on it and a transparent background — across all components where the coin image appears, including HeroSection, Navigation (logo), AboutSection, CommunitySection CTA banner, and any other component currently rendering the coin image.",
       "files": [
-        "frontend/src/components/HowToBuySection.tsx"
+        "frontend/src/components/AboutSection.tsx",
+        "frontend/src/components/CommunitySection.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/components/Navigation.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +18,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-25"
+        "REQ-29"
       ],
       "confidence": "high"
     }

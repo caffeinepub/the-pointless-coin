@@ -1,35 +1,45 @@
 {
   "kind": "build_request",
-  "title": "Remove contract address displayed under Step 2 in HowToBuySection",
+  "title": "Replace coin image with new uploaded coin (transparent background)",
+  "projectName": "The Pointless Coin",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-25",
-      "text": "In the HowToBuySection component, remove the contract address (CA) text that is displayed beneath or within Step 2 ('Swap SOL for $POINTLESS on Phantom'). Do not replace it with any alternative copy — simply omit the CA display entirely from that step. All other content in the step (title, description, icon) should remain unchanged.",
+      "id": "REQ-29",
+      "text": "Replace the current primary coin image (pointless-coin-new.dim_512x512.png) with the newly provided coin image (pointless-coin-p.dim_512x512.png) — a gold 3D coin with a white 'P' letter on it and a transparent background — across all components where the coin image appears, including HeroSection, Navigation (logo), AboutSection, CommunitySection CTA banner, and any other component currently rendering the coin image.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-last"
+          "msg-1"
         ],
         "quotes": [
-          "remove the ca under step 2"
+          "lets try it with this one actually dont include the white background"
         ]
       },
       "acceptanceCriteria": [
-        "The contract address string 'D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk' is no longer visible within Step 2 of the HowToBuySection.",
-        "No CA label, address text, or copy-button related to the contract address appears under Step 2.",
-        "All other content in Step 2 (heading, descriptive copy, icon) remains intact and unchanged.",
-        "Steps 1 and 3 are unaffected."
+        "The new coin image (pointless-coin-p.dim_512x512.png) is saved to frontend/public/assets/generated/ with a transparent background (no white checkerboard or white fill behind the coin).",
+        "HeroSection renders the new coin image in place of the previous coin image.",
+        "Navigation logo renders the new coin image.",
+        "AboutSection renders the new coin image.",
+        "CommunitySection CTA banner renders the new coin image.",
+        "No component on the site still references the old coin image filenames for visible display.",
+        "The transparent background ensures the coin blends naturally against the dark site background."
       ]
     }
   ],
-  "constraints": [],
+  "constraints": [
+    "The replacement coin image must have a transparent background — remove or strip any white background before use.",
+    "Do not alter any site copy, layout, links, or other components beyond swapping the coin image source."
+  ],
   "nonGoals": [
-    "Do not remove the contract address from the TokenomicsSection or any other part of the site.",
-    "Do not modify any other steps in the HowToBuySection beyond removing the CA from Step 2."
+    "Changing any text content, section copy, or tokenomics data.",
+    "Modifying layout structure or component order.",
+    "Updating any links or contract address values."
   ],
   "imageRequirements": {
     "required": [],
-    "edits": []
+    "edits": [
+      "Remove the white/checkered background and make it fully transparent, preserving the gold 3D coin with white 'P' letter (pointless-coin-new.dim_512x512.png > pointless-coin-p.dim_512x512.png)"
+    ]
   }
 }

@@ -15,18 +15,19 @@ export default function AboutSection() {
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
               <div
-                className="absolute inset-0 rounded-full"
+                className="absolute inset-0"
                 style={{
                   background: 'radial-gradient(circle, oklch(0.82 0.18 85 / 0.2) 0%, transparent 70%)',
                   transform: 'scale(1.4)',
                 }}
               />
               <img
-                src="/assets/generated/pointless-coin.dim_512x512.png"
+                src="/assets/generated/pointless-coin-p.dim_512x512.png"
                 alt="The Pointless Coin"
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover"
+                className="relative w-64 h-64 md:w-80 md:h-80 object-contain"
                 style={{
-                  boxShadow: '0 0 60px oklch(0.82 0.18 85 / 0.3), 0 0 120px oklch(0.82 0.18 85 / 0.15)',
+                  filter:
+                    'drop-shadow(0 0 40px oklch(0.82 0.18 85 / 0.4)) drop-shadow(0 0 80px oklch(0.82 0.18 85 / 0.2))',
                 }}
               />
               {/* Orbiting badge */}

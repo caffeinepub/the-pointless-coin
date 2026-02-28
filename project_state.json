@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 21,
+  "projectStateVersion": 29,
   "summary": "Build a meme coin website inspired by theuselesscoin.com, rebranded as 'The Pointless Coin'. The site should replicate the look and feel of the original but use custom branding and a user-provided coin image.",
   "architectural_notes": [
     "Single-page meme coin website, static or near-static with fun/animated UI elements",
@@ -9,6 +9,7 @@
   ],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Remove the white/checkered background and make it fully transparent, preserving the gold 3D coin with white 'P' letter (pointless-coin-new.dim_512x512.png > pointless-coin-p.dim_512x512.png)",
   "existing_features": [
     {
       "id": "feature-create-a-full-page-hero-section-with-a-large-animated-coin-logo-using-the-generated-coin-image-the-headline-the-pointless-coin-a-punchy-meme-style-tagline-e-g-absolutely-no-utility-completely-pointless-100-yours-and-two-cta-buttons-buy-now-and-join-community",
@@ -201,6 +202,38 @@
         "REQ-25"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-the-howtobuysection-component-within-step-2-swap-sol-for-pointless-on-phantom-update-the-instruction-copy-that-currently-says-something-like-search-for-pointless-or-similar-phrasing-to-instead-read-paste-the-pointless-ca-address-in-phantom-coin-search-found-above-all-other-content-in-the-step-title-icon-remaining-description-copy-should-remain-unchanged",
+      "title": "In the HowToBuySection component, within Step 2 ('Swap SOL for $POINTLESS on Phantom'), update the instruction copy that currently says something like 'search for $POINTLESS' (or similar phrasing) to instead read: 'paste the $POINTLESS CA address in Phantom coin search found above'. All other content in the step (title, icon, remaining description copy) should remain unchanged.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-every-x-twitter-communities-link-across-all-frontend-components-including-communitysection-footer-herosection-and-any-other-file-containing-the-old-url-to-use-the-new-url-https-x-com-i-communities-2027195726711697820-replace-all-instances-of-the-previous-community-url-https-x-com-i-communities-2027059335088521312-with-the-new-one",
+      "title": "Update every X (Twitter) Communities link across all frontend components — including CommunitySection, Footer, HeroSection, and any other file containing the old URL — to use the new URL: https://x.com/i/communities/2027195726711697820. Replace all instances of the previous community URL (https://x.com/i/communities/2027059335088521312) with the new one.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-coin-image-pointless-coin-dim-512x512-png-with-the-newly-generated-image-pointless-coin-new-dim-512x512-png-as-the-primary-coin-visual-across-all-components-where-the-coin-image-appears-including-herosection-navigation-logo-aboutsection-communitysection-cta-banner-and-any-other-component-currently-rendering-the-coin-image",
+      "title": "Replace the existing coin image (pointless-coin.dim_512x512.png) with the newly generated image (pointless-coin-new.dim_512x512.png) as the primary coin visual across all components where the coin image appears — including HeroSection, Navigation (logo), AboutSection, CommunitySection CTA banner, and any other component currently rendering the coin image.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-primary-coin-image-pointless-coin-new-dim-512x512-png-with-the-newly-provided-coin-image-pointless-coin-p-dim-512x512-png-a-gold-3d-coin-with-a-white-p-letter-on-it-and-a-transparent-background-across-all-components-where-the-coin-image-appears-including-herosection-navigation-logo-aboutsection-communitysection-cta-banner-and-any-other-component-currently-rendering-the-coin-image",
+      "title": "Replace the current primary coin image (pointless-coin-new.dim_512x512.png) with the newly provided coin image (pointless-coin-p.dim_512x512.png) — a gold 3D coin with a white 'P' letter on it and a transparent background — across all components where the coin image appears, including HeroSection, Navigation (logo), AboutSection, CommunitySection CTA banner, and any other component currently rendering the coin image.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -299,6 +332,24 @@
     {
       "id": "AR-17",
       "summary": "Remove the contract address (CA) displayed under Step 2 in the HowToBuySection",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "In HowToBuySection Step 2, change the instruction from 'search for $POINTLESS' to 'paste the $POINTLESS CA address in Phantom coin search found above'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Update the X (Twitter) Communities link in the CommunitySection to https://x.com/i/communities/2027195726711697820",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Add more coin images/pictures of the coin throughout the site (in hero, about, or other sections)",
       "reqIds": [],
       "status": "pending"
     }

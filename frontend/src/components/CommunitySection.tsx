@@ -6,7 +6,7 @@ const socials = [
     handle: 'x.com/i/communities',
     description: 'Follow us for memes, updates, and the occasional existential crisis about crypto. Join the Pointless Army on X.',
     icon: SiX,
-    href: 'https://x.com/i/communities/2027059335088521312',
+    href: 'https://x.com/i/communities/2027195726711697820',
     color: 'hover:border-foreground/40',
     iconBg: 'bg-foreground/10',
   },
@@ -89,30 +89,37 @@ export default function CommunitySection() {
           />
           <div className="relative z-10">
             <img
-              src="/assets/generated/pointless-coin.dim_512x512.png"
+              src="/assets/generated/pointless-coin-p.dim_512x512.png"
               alt="Pointless Coin"
-              className="w-20 h-20 rounded-full mx-auto mb-6 animate-coin-float"
-              style={{ boxShadow: '0 0 30px oklch(0.82 0.18 85 / 0.4)' }}
+              className="w-20 h-20 object-contain mx-auto mb-6 animate-coin-float"
+              style={{
+                filter: 'drop-shadow(0 0 20px oklch(0.82 0.18 85 / 0.5))',
+              }}
             />
             <h3 className="font-display text-4xl md:text-5xl text-foreground mb-4">
               Ready to Be{' '}
               <span className="shimmer-text">Pointless?</span>
             </h3>
             <p className="text-foreground/50 text-lg mb-8 max-w-lg mx-auto">
-              Stop overthinking it. Buy the coin. Join the community. Embrace the pointlessness.
-              Life's too short to only invest in "useful" things.
+              Join thousands of degens who have already embraced the void.
+              Buy some $POINTLESS and do absolutely nothing with it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase">
-                🚀 Buy $POINTLESS
-              </button>
               <a
-                href="https://x.com/i/communities/2027059335088521312"
+                href="https://x.com/i/communities/2027195726711697820"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase inline-flex items-center justify-center"
+                className="btn-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase"
               >
-                𝕏 Join Community
+                🚀 Buy $POINTLESS
+              </a>
+              <a
+                href="https://x.com/i/communities/2027195726711697820"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline-gold px-10 py-4 rounded-sm text-lg font-heading tracking-wider uppercase"
+              >
+                💬 Join Community
               </a>
             </div>
           </div>

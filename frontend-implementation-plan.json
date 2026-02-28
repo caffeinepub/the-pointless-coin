@@ -1,22 +1,45 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove contract address from HowToBuySection Step 2",
+  "title": "Replace coin image with new uploaded coin (transparent background)",
   "requirements": [
     {
-      "id": "REQ-25",
-      "summary": "Remove the contract address (CA) text displayed beneath or within Step 2 in the HowToBuySection component, leaving all other step content unchanged",
+      "id": "REQ-29",
+      "summary": "Replace the current primary coin image (pointless-coin-new.dim_512x512.png) with the newly provided coin image (pointless-coin-p.dim_512x512.png) across all components where the coin image appears",
       "acceptanceCriteria": [
-        "The contract address string 'D9amokaerETTwVavdrd3nvWcwMAs3dj5HGPwAK47bonk' is no longer visible within Step 2 of the HowToBuySection.",
-        "No CA label, address text, or copy-button related to the contract address appears under Step 2.",
-        "All other content in Step 2 (heading, descriptive copy, icon) remains intact and unchanged.",
-        "Steps 1 and 3 are unaffected."
+        "The new coin image (pointless-coin-p.dim_512x512.png) is saved to frontend/public/assets/generated/ with a transparent background (no white checkerboard or white fill behind the coin).",
+        "HeroSection renders the new coin image in place of the previous coin image.",
+        "Navigation logo renders the new coin image.",
+        "AboutSection renders the new coin image.",
+        "CommunitySection CTA banner renders the new coin image.",
+        "No component on the site still references the old coin image filenames for visible display.",
+        "The transparent background ensures the coin blends naturally against the dark site background."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HowToBuySection.tsx",
+          "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Remove the contract address display (text and any associated copy button or label) from Step 2 ('Swap SOL for $POINTLESS on Phantom'). Retain the step's title, description, and icon. Do not modify Steps 1 or 3."
+          "description": "Update the floating coin image src attribute to reference frontend/public/assets/generated/pointless-coin-p.dim_512x512.png instead of the current pointless-coin-new.dim_512x512.png. Ensure the coin renders with transparent background blending naturally against the dark hero section background."
+        },
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Update the navigation logo coin image src attribute to reference frontend/public/assets/generated/pointless-coin-p.dim_512x512.png instead of the current coin image. Verify the transparent background works correctly in the fixed top navigation bar against the dark background."
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Update the two-column section coin image src attribute to reference frontend/public/assets/generated/pointless-coin-p.dim_512x512.png instead of pointless-coin-new.dim_512x512.png. Ensure the glow effects and transparent background render correctly."
+        },
+        {
+          "path": "frontend/src/components/CommunitySection.tsx",
+          "operation": "modify",
+          "description": "Update the CTA banner floating coin image src attribute to reference frontend/public/assets/generated/pointless-coin-p.dim_512x512.png instead of the current coin image. Verify the transparent background blends naturally with the banner background."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the footer brand logo coin image src attribute (if present) to reference frontend/public/assets/generated/pointless-coin-p.dim_512x512.png instead of any previous coin image reference. Ensure the transparent background works correctly in the footer context."
         }
       ]
     }

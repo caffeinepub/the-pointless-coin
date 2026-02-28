@@ -42,9 +42,12 @@ export default function Navigation() {
           >
             <div className="relative">
               <img
-                src="/assets/generated/pointless-coin.dim_512x512.png"
+                src="/assets/generated/pointless-coin-p.dim_512x512.png"
                 alt="Pointless Coin"
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover animate-pulse-glow"
+                className="w-10 h-10 md:w-12 md:h-12 object-contain animate-pulse-glow"
+                style={{
+                  filter: 'drop-shadow(0 0 6px oklch(0.82 0.18 85 / 0.5))',
+                }}
               />
             </div>
             <span className="font-heading text-lg md:text-xl text-gold-bright hidden sm:block">
